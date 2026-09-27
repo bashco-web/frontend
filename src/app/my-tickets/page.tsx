@@ -323,6 +323,7 @@ export default function MyTicketsPage() {
                   View on-chain (ticket #{ticket.chainTicketId})
                   <ExternalLink size={12} aria-hidden="true" />
                 </a>
+              )}
               {ticket.status === 'VALID' ? (
                 <div className="mt-3">
                   <TicketQr value={ticket.qrSecret} />
